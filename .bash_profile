@@ -6,7 +6,9 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Aliases
 alias ll='ls -latr'
 alias dockerbad='docker system prune -a --volumes'
+alias dce='docker compose exec'
 alias cleards="find . -name '.DS_Store' -type f -delete"
+alias freechromium="xattr -dr com.apple.quarantine /Applications/Chromium.app/"
  
  # Load bash prompt style
 [[ -f "$HOME/.bash_prompt" ]] && . "$HOME/.bash_prompt"
@@ -39,3 +41,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Postgres
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Set Go path
+export GOPATH="/Users/tbolt/Developer/go"
