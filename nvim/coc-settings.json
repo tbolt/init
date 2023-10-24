@@ -1,0 +1,32 @@
+{
+  "coc.preferences.enableMessageDialog": true,
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.preferences.formatOnSave": true,
+  "colors.enable": true,
+  "diagnostic.floatConfig": { "border": true, "rounded": true },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "floatFactory.floatConfig": { "border": true, "rounded": true },
+  "git.addedSign.hlGroup": "GitSignsAdd",
+  "git.changeRemovedSign.hlGroup": "GitSignsChange",
+  "git.changedSign.hlGroup": "GitSignsChange",
+  "git.floatConfig": { "border": true, "rounded": true },
+  "git.removedSign.hlGroup": "GitSignsDelete",
+  "git.topRemovedSign.hlGroup": "GitSignsDelete",
+  "hover.floatConfig": { "border": true, "rounded": true },
+  "html.autoClosingTags": false,
+  "list.insertMappings": {
+    "<C-n>": "normal:j",
+    "<C-p>": "normal:k"
+  },
+  "Lua.diagnostics.globals": ["vim"],
+  "notification.timeout": 5000,
+  "prettier.disableLanguages": ["haskell"],
+  "prettier.tabWidth": 2,
+  "signature.floatConfig": { "border": true, "rounded": true },
+  "suggest.floatConfig": { "border": true, "rounded": true },
+  "suggest.noselect": true,
+  "suggest.removeDuplicateItems": true
+}
