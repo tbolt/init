@@ -1,2 +1,3 @@
-# Dots
+# Init
+
 local configs and such
