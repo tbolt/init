@@ -12,6 +12,7 @@
   mas   = checkout master
   sin   = push --force-with-lease
   satan = push --force
+  undo = reset --soft HEAD^
 [core]
   excludesfile = /Users/tbolt/.gitignore_global
 [gpg]
