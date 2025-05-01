@@ -1,5 +1,3 @@
-source ~/.secrets
-
 # Shh macOS
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
@@ -25,22 +23,17 @@ function tab_title {
 	echo -n -e "\033]0;${PWD##*/}\007"
 }
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Ruby version manager
+eval "$(/opt/homebrew/bin/rbenv init - bash)"
+
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"	# This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"	# This loads nvm bash_completion
 
-# Ruby version manager
-eval "$(/opt/homebrew/bin/rbenv init - bash)"
 
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Rustup
-. "$HOME/.cargo/env"
 
-# Postgres
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-# Set Go path
-export GOPATH="/Users/tbolt/Developer/go"
