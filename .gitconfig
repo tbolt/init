@@ -1,6 +1,6 @@
 [user]
   name = Ty Bolt
-  email = tybolt@gmail.com
+  email = nil
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINRedu/3yR5hajeW1l9FRqJqAMHaqkJqtd0Xk7LWpmUJ
 [alias]
   co    = checkout
