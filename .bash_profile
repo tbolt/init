@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Shh macOS
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
@@ -33,3 +34,8 @@ eval "$(/opt/homebrew/bin/rbenv init - bash)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"	# This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"	# This loads nvm bash_completion
+=======
+[[ -f ~/.bashrc ]] && source ~/.bashrc
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
+>>>>>>> 48e3515 (cleanup)
