@@ -1,6 +1,3 @@
-# Shh macOS
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
 # Aliases
 alias ll='ls -latr'
 alias dockerbad='docker system prune -a --volumes'
