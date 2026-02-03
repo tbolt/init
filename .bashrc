@@ -35,7 +35,7 @@ build_prompt() {
    git_info=$(parse_git_info)
    [[ -n "$git_info" ]] && git_info=" $YELLOW$git_info"
    
-   PS1="\n(${hist_color}\!${WHITE}) ${CYAN}\t ${PROMPT_ICON} ${MAUVE}\u${BLACK} ${BLUE}\w${git_info}${BLACK}\n\$ "
+   PS1="\n${CYAN}\t ${PROMPT_ICON}${MAUVE}\u${BLACK} ${BLUE}\w${git_info}${BLACK}\n\$ "
 }
 
 tab_title() { echo -ne "\033]0;${PWD##*/}\007"; }
