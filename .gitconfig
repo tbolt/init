@@ -13,6 +13,11 @@
   sin   = push --force-with-lease
   satan = push --force
   undo  = reset --soft HEAD^
+  who   = shortlog -sn --no-merges
+  churn = !git log --format=format: --name-only --since='1 year ago' | sort | uniq -c | sort -nr | head -20
+  bugs  = !git log -i -E --grep='fix|bug|broken' --name-only --format='' | sort | uniq -c | sort -nr | head -20
+  pulse = !git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c
+  fires = !git log --oneline --since='1 year ago' | grep -iE 'revert|hotfix|emergency|rollback'
 [core]
   excludesfile = /Users/tbolt/.gitignore_global
 [gpg]
