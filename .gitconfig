@@ -1,7 +1,6 @@
 [user]
   name = Ty Bolt
   email = nil
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINRedu/3yR5hajeW1l9FRqJqAMHaqkJqtd0Xk7LWpmUJ
 [alias]
   co    = checkout
   ci    = commit
@@ -18,11 +17,8 @@
   bugs  = !git log -i -E --grep='fix|bug|broken' --name-only --format='' | sort | uniq -c | sort -nr | head -20
   pulse = !git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c
   fires = !git log --oneline --since='1 year ago' | grep -iE 'revert|hotfix|emergency|rollback'
-[core]
-  excludesfile = /Users/tbolt/.gitignore_global
+  save = "!f() { git add -A; git commit -m \"${1:-updates}\" || true; git push -u origin HEAD; }; f"
 [gpg]
-  format = ssh
-[gpg "ssh"]
-  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	format = ssh
 [commit]
-  gpgsign = true
+	gpgsign = true
