@@ -3,6 +3,7 @@ alias ll='ls -latr'
 alias dockerbad='docker system prune -a --volumes'
 alias dce='docker compose exec'
 alias cleards="find . -name '.DS_Store' -type f -delete"
+ alias pullall='for d in ~/Developer/*/; do echo "$d"; git -C "$d" pull; done'
  
 # Load bash prompt style
 BLACK="\[\033[0m\]"
