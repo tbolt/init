@@ -44,7 +44,8 @@ tab_title() { echo -ne "\033]0;${PWD##*/}\007"; }
 PROMPT_COMMAND="build_prompt; tab_title"
 
 # Load git autocomplete
-[[ -f "$HOME/.git-completion.bash" ]] && . "$HOME/.git-completion.bash"
+source /usr/share/bash-completion/completions/git 2>/dev/null
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash 2>/dev/null
 
 # Initialize
 cd ~/Developer
