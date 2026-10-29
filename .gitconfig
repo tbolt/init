@@ -17,7 +17,7 @@
   bugs  = !git log -i -E --grep='fix|bug|broken' --name-only --format='' | sort | uniq -c | sort -nr | head -20
   pulse = !git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c
   fires = !git log --oneline --since='1 year ago' | grep -iE 'revert|hotfix|emergency|rollback'
-  save = "!f() { git add -A; git commit -m \"${1:-updates}\" || true; git push -u origin HEAD; }; f"
+  save = "!f() { git add -A && git commit -m \"${1:-updates}\" && git push -u origin HEAD; }; f"
 [gpg]
 	format = ssh
 [commit]
